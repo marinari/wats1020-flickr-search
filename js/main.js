@@ -5,12 +5,25 @@
 // of tags and view the images that are found.
 //
 // Allow users to click the images to see a larger version with more information.
-$(document).on('ready', function(){
-    // Place your code here, inside the document ready handler.
 
+$(document).on('ready', function(){
     // Create a function called `searchImages()`. This function will handle the
-    // process of taking a user's search terms and sending them to Flickr for a
-    // response.
+    var searchImages = function(tags){
+      var FlickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+      console.log(tags);
+      $.getJSON(FlickrAPI, {
+
+        tags: tags,
+        tagmode: 'any',
+        format: 'json'
+      }).done(function(data) {
+          //empties image area first
+          $('#images').empty();
+      })
+
+    }
+
+
 
     // Inside the `searchImages()` function, the following things should happen:
 
