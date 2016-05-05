@@ -45,13 +45,14 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
-
+#largeCircle {
+    width: 456px;
+    height: 296px;
+    padding: 80px 0px 80px 0px;
+    background: url('/gfx/backs/back_yellow.png') repeat;
+    -moz-border-radius: 230px 230px 230px 230px;
+    border-radius: 230px 230px 230px 230px;
+    text-align: center;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
