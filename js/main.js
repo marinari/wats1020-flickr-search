@@ -5,7 +5,8 @@
 // of tags and view the images that are found.
 //
 // Allow users to click the images to see a larger version with more information.
-
+//
+console.log('a');
 $(document).on('ready', function(){
     // Create a function called `searchImages()`. This function will handle the
     var searchImages = function(tags){
@@ -22,9 +23,6 @@ $(document).on('ready', function(){
       })
 
     }
-
-
-
     // Inside the `searchImages()` function, the following things should happen:
 
         // 1.   Accept a string value called `tags` as an argument. Example:
@@ -56,7 +54,4 @@ $(document).on('ready', function(){
 
     // STRETCH GOAL: Add a "more info" popup using the technique shown on the
     // Bootstrap Modal documentation: http://getbootstrap.com/javascript/#modals-related-target
-
-
-
 });

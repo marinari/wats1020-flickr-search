@@ -45,6 +45,15 @@ $(document).on('ready', function(){
     });
   };
 
+  var formatDate = function(unformattedDate) {
+		var formattedDate = new Date(unformattedDate);
+		var d = formattedDate.getDate();
+		var m =  formattedDate.getMonth();
+		m += 1;  // JavaScript months are 0-11
+		var y = formattedDate.getFullYear();
+		return (m + "." + d + "." + y);
+	};
+
   $('button.search').on('click', function(event){
     event.preventDefault();
     var searchTextInput = $(event.target.parentElement).find('input[name="searchText"]')[0];
