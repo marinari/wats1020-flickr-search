@@ -25,6 +25,8 @@ ul#images li button {
 
 ul#images {
     list-style-type: none;
+    margin: 2px;
+    padding: 2px;
 }
 
 ul#images .placeholder {
@@ -42,7 +44,6 @@ ul#images .placeholder {
 hr {
     clear:both;
 }
-
 
 
 #largeCircle {
