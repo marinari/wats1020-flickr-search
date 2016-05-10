@@ -1,13 +1,13 @@
 // Asynchronous Flickr Search
 
 $(document).on('ready', function(){
+  //test to always make sure js is working in browser
   console.log('b');
 
   //create a function called `searchImages()`. Accept a string value called `tags` as an argument.
   var searchImages = function(tags) {
     //Define the location of the Flickr API.
     var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-    console.log('starting search img function: '+tags );
     $('#images').innerHTML = '<li class="search-throbber">Searching...</li>';
     //Construct a `$.getJSON()` call where you send a request object including the tags the user submitted
     $.getJSON( flickrAPI, {
