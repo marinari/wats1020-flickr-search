@@ -4,11 +4,13 @@
 
 
 ul#images li {
-    width: 120px;
+    width: 300px;
     height: auto;
     display: inline-block;
     position: relative;
     float: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 ul#images li img {
@@ -23,8 +25,8 @@ ul#images li button {
 
 ul#images {
     list-style-type: none;
-    margin: 2px;
-    padding: 2px;
+    margin: 20px;
+    padding: 20px;
 }
 
 ul#images .placeholder {
