@@ -27,6 +27,11 @@ $(document).on('ready', function(){
         var newDate = $('<p class="image-date">').text(item.date_taken).appendTo(newListItem);
         var newDescription = $('<p class="image-description">').html(item.description).appendTo(newListItem);
         var newLink = $('<a>').attr('href', item.link).text('View on Flickr.').appendTo(newListItem);
+
+        newListItem.appendTo( "#images" );
+        if ( i === 20 ) {
+          return false;
+        }
       });
     });
   };
